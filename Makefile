@@ -11,3 +11,9 @@ build_first_response:
 
 run_first_response: build_first_response
 	@./bin/main
+
+build_done_channel:
+	@go build -o bin/main done_channel/main.go
+
+run_done_channel: build_done_channel
+	@./bin/main
